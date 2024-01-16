@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- gli attributi action e method servono ad inviare i dati raccolti dal form dai campi secondo modalitaprecise -->
+    <!-- <form action="file.php" method="POST"></form> -->
+    <form>
+      <label for="name">Nome</label>
+      <br />
+      <input type="text" name="" id="name" placeholder="Inserisci il tuo nome" required />
+      <br />
+      <label for="cognome">Cognome</label>
+      <br />
+      <input type="text" name="" id="cognome" placeholder="Inserisci il tuo cognome" />
+      <fieldset>
+        <legend>Sito Web</legend>
+        <label for="website">URL</label>
+        <input type="url" id="website" placeholder="https://www...." />
+      </fieldset>
+      <fieldset>
+        <legend>Fumatori</legend>
+        <label for="si-moking">si</label>
+        <input type="radio" name="smoking-btn" id="no-smoking" />
+        <input type="radio" name="smoking-btn" id="si-smoking" />
+        <label for="no-smoking">no</label>
+      </fieldset>
+<hr>
+      <label for="location">Regione</label>
+      <select name="" id="location">
+        <!-- tramite il value possiamo apportare una trasfromazione del valore con quello che ci interessa -->
+        <option value="">selezionare un opzione</option>
+        <optgroup label="Nord">
+        <option value="VE">Veneto</option>
+        <option>Piemonte</option>
+        <option>Lombardia</option></optgroup>
+        <optgroup label="Sud">
+        <option>Campania</option></optgroup>
+      </select>
+<br>
+      <input type="checkbox" id="webcam" />
+      <label for="webcam">webcam presente</label>
+
+      <br />
+      <label for="bio">Biografia</label>
+      <br />
+      <textarea placeholder="parlaci di te" name="" id="bio" cols="30" rows="10"></textarea>
+      <br />
+      <input type="button" value="Invia il dato" />
+      <button type="button">bottone secondario</button>
+      <button type="reset">reset</button>
+      <button type="submit">Invia dati</button>
+    </form>
+  </body>
+</html>
